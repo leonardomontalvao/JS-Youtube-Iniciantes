@@ -30,3 +30,34 @@ console.log('1' == 1);
 let ponto = 150;
 let tipo = ponto > 100 ? 'premium' : 'comum'
 console.log('este cliente é : ' + tipo);
+
+// operadores logicos 
+// e(&&) retor true se os dois forem verdadeiros
+console.log(true && true);
+
+// let maiorDeIdade = false;
+// let possuiCarteiraDeTrabalho = true;
+// let podeAplicar = maiorDeIdade && possuiCarteiraDeTrabalho;
+
+// console.log(podeAplicar);
+
+//operador ou (||)
+
+let maiorDeIdade = false;
+let possuiCarteiraDeTrabalho = true;
+let podeAplicar = maiorDeIdade || possuiCarteiraDeTrabalho;
+console.log(podeAplicar);
+
+// operador not (!)
+let candidatoRecusado = !podeAplicar;
+
+console.log(candidatoRecusado);
+
+// comparação logica com valores não buleanos
+let corPersonalizada = '';
+let corPadrao = "azul";
+let corPerfil = corPersonalizada || corPadrao
+
+console.log(corPerfil);
+
+// trocando valores de variaveis
