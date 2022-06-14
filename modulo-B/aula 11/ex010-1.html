@@ -9,26 +9,29 @@
 </head>
 
 <body>
-    <h1>Sistema de multas</h1>
-    Velocidade do Carro: <input type="Number" name="txtvel" id="txtvel"> Km/h
-    <input type="button" value="Verificar" onclick="calcular()">
+    <h1>Brasileiro ou estrangeiro</h1>
+    Pais de origem: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar">
     <div id="res">
 
     </div>
     <script>
         function calcular() {
 
-            var txtv = window.document.getElementById('txtvel');
+            var txtpais = window.document.getElementById('txtpais');
 
             var res = window.document.querySelector('div#res')
-
+            var vel = Number(txtv.value)
             res.innerHTML = `<p>Sua velocidade atual é de ${vel}</p>`
 
-            if (vel > 60) {
-                res.innerHTML += `<p>Você está multado </p>`
+
+            if (txtpais = Brasil) {
+                res.innerHTML += `<p>Você é Brasileiro </p>`
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro </p>`
             }
 
-            res.innerHTML += `<p>Dirija sempre com cinto </p>`
+
 
 
 
